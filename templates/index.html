@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word-Counter</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@300;400&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        display: flex;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      textarea {
+        position: relative;
+        background: #d3d3d3;
+        resize: none;
+        text-align: justify;
+        padding: 20px;
+        margin: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      textarea:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      input {
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: relative;
+        left: 42%;
+      }
+
+      .button {
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+      }
+
+      .button:hover {
+        background-color: #555555;
+        color: white;
+      }
+
+      .heading {
+        text-align: left;
+        margin-left: 1.3rem;
+        margin-bottom: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        word-spacing: 0.15rem;
+        letter-spacing: 0.015rem;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 4rem;
+        margin-bottom: 6rem;
+        letter-spacing: 0.015rem;
+        word-spacing: 0.15rem;
+
+      }
+    </style>
+
+    <form action="counter" method="">
+      <h1>WORD COUNTER</h1>
+      <h2 class="heading">Enter your text below :</h2>
+      <textarea name="text" cols="100" rows="20"></textarea><br />
+      <input type="submit" class="button" />
+    </form>
+  </body>
+</html>
